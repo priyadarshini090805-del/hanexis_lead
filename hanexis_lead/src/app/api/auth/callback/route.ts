@@ -28,6 +28,5 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(`${origin}${next}`)
     }
   }
-
   return NextResponse.redirect(`${origin}/login?error=auth_callback_failed`)
 }
